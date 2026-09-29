@@ -4,3 +4,5 @@ sqlalchemy==2.0.23
 pydantic==2.5.2
 python-multipart==0.0.6
 aiofiles==23.2.1
+# 自动化测试（FastAPI TestClient）需要，固定到与 fastapi 0.104 兼容的版本
+httpx==0.25.2

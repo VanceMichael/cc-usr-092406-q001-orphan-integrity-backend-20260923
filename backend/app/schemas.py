@@ -21,7 +21,7 @@ class PondUpdate(BaseModel):
 
 class PondResponse(PondBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
     updated_at: datetime
 
     class Config:
@@ -50,7 +50,7 @@ class BatchUpdate(BaseModel):
 
 class BatchResponse(BatchBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
     updated_at: datetime
 
     class Config:
@@ -81,7 +81,7 @@ class StockingRecordUpdate(BaseModel):
 
 class StockingRecordResponse(StockingRecordBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
@@ -111,7 +111,7 @@ class FeedingRecordUpdate(BaseModel):
 
 class FeedingRecordResponse(FeedingRecordBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
@@ -145,7 +145,7 @@ class WaterQualityRecordUpdate(BaseModel):
 
 class WaterQualityRecordResponse(WaterQualityRecordBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
@@ -181,7 +181,7 @@ class MedicationRecordUpdate(BaseModel):
 
 class MedicationRecordResponse(MedicationRecordBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
@@ -213,7 +213,7 @@ class CostRecordUpdate(BaseModel):
 
 class CostRecordResponse(CostRecordBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
@@ -245,7 +245,7 @@ class HarvestSaleUpdate(BaseModel):
 
 class HarvestSaleResponse(HarvestSaleBase):
     id: int
-    created_at: datetime
+    created_at: Optional[datetime] = None
 
     class Config:
         orm_mode = True
